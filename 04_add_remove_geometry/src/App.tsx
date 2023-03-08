@@ -20,11 +20,12 @@ export default function App() {
       // 地図の作成
       map = new maplibregl.Map({
         container: mapContainer.current,
-        style: "https://demotiles.maplibre.org/style.json", // style URL
+        style:
+          "https://gsi-cyberjapan.github.io/gsivectortile-mapbox-gl-js/std.json", // 地図のスタイル(国土地理院地図のMapboxVectorTileを指定)
         center: [139.753, 35.6844], // 初期緯度経度
-        zoom: 16, // 初期ズーム値
+        zoom: 7, // 初期ズーム値
         minZoom: 4, // 最小ズーム値
-        maxZoom: 20, // 最大ズーム値
+        maxZoom: 16, // 最大ズーム値
       });
       map.addControl(new maplibregl.NavigationControl({}), "top-right"); // ズーム・回転コントロールの表示
       map.addControl(new maplibregl.ScaleControl({}), "bottom-left"); // スケール値の表示
