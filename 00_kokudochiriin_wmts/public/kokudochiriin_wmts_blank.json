@@ -1,0 +1,26 @@
+{
+  "id": "43f36e14-e3f5-43c1-84c0-50a9c80dc5c7",
+  "name": "MapLibre",
+  "version": 8,
+  "zoom": 0.8619833357855968,
+  "pitch": 0,
+  "center": [17.65431710431244, 32.954120326746775],
+  "bearing": 0,
+  "sources": {
+    "rtile": {
+      "type": "raster",
+      "tiles": ["https://cyberjapandata.gsi.go.jp/xyz/blank/{z}/{x}/{y}.png"],
+      "tileSize": 256,
+      "attribution": "地図の出典：<a href='https://www.gsi.go.jp/' target='_blank'>地理院タイル</a>"
+    }
+  },
+  "layers": [
+    {
+      "id": "raster-tiles",
+      "type": "raster",
+      "source": "rtile",
+      "minzoom": 5,
+      "maxzoom": 14
+    }
+  ]
+}
