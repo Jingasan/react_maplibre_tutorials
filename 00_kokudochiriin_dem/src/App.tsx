@@ -50,8 +50,22 @@ export default function App() {
         minPitch: 0, // 最小ピッチ値
         maxPitch: 85, // 最大ピッチ値
       });
-      map.addControl(new maplibregl.NavigationControl({}), "top-right"); // ズーム・回転コントロールの表示
+      map.addControl(
+        new maplibregl.NavigationControl({
+          visualizePitch: true,
+          showZoom: true,
+          showCompass: true,
+        }),
+        "top-right"
+      ); // ズーム・回転コントロールの表示
       map.addControl(new maplibregl.ScaleControl({}), "bottom-left"); // スケール値の表示
+      map.addControl(
+        new maplibregl.TerrainControl({
+          source: "terrain",
+          exaggeration: 1.2,
+        }),
+        "top-right"
+      );
     }
   });
 
