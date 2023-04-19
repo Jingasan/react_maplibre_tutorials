@@ -1,0 +1,20 @@
+{
+  "version": 8,
+  "sources": {
+    "OSM": {
+      "type": "raster",
+      "tiles": ["https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"],
+      "tileSize": 256,
+      "attribution": "OpenStreetMap"
+    }
+  },
+  "layers": [
+    {
+      "id": "BASEMAP",
+      "type": "raster",
+      "source": "OSM",
+      "minzoom": 0,
+      "maxzoom": 18
+    }
+  ]
+}
