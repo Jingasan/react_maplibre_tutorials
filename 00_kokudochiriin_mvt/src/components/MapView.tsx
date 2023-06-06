@@ -19,6 +19,7 @@ export default function MapView() {
         style:
           "https://gsi-cyberjapan.github.io/gsivectortile-mapbox-gl-js/std.json", // 地図のスタイル(国土地理院地図のMapboxVectorTileを指定)
         center: [139.753, 35.6844], // 初期緯度経度
+        bearing: 0, // 回転値
         zoom: 7, // 初期ズーム値
         minZoom: 4, // 最小ズーム値
         maxZoom: 16, // 最大ズーム値
